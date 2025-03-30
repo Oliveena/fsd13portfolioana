@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="{{ asset('css/style.css') }}">
+
 <!--========================================== NAVBAR SECTION ==========================================-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">

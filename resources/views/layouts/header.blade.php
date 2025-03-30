@@ -7,6 +7,7 @@
     <meta name="description" content="A personal portfolio webpage for Anastassia Tarassova, junior developer.">
     <meta name="author" content="Anastassia Tarassova">
     <meta name="keywords" content="HTML, CSS, JS, Java, SQL, Personal, Portfolio, Web Dev, Women in STEM, Excellence">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>Anastassia's Web Dev Portfolio</title>
 
     <!-- adding a favicon -->
@@ -14,16 +15,18 @@
 
     <!-- adding Bootstrap 5 CSS -->
 
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('C:\Users\anata\Herd\fsd13portfolioana\public\css\style.css') }}">
 
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         crossorigin="anonymous">
 
+    @vite('resources/sass/app.scss') 
+
 
     <!-- adding JS scripts -->
 
-    <script type="text/javascript" src="{{ asset('shared_assets/JS/0_navbar_active_highlight.js') }}" defer></script>
+    {{-- <script type="text/javascript" src="{{ asset('shared_assets/JS/0_navbar_active_highlight.js') }}" defer></script>
     <script type="text/javascript" src="{{ asset('shared_assets/JS/1_fluid_transitions.js') }}" defer></script>
     <script type="text/javascript" src="{{ asset('shared_assets/JS/2_modal.js') }}" defer></script>
     <script type="text/javascript" src="{{ asset('shared_assets/JS/3_review_carousel.js') }}" defer></script>
@@ -34,5 +37,9 @@
     <script type="text/javascript" src="{{ asset('shared_assets/JS/8_google_api.js') }}" defer></script>
     <script type="text/javascript" src="{{ asset('shared_assets/JS/9_books_read.js') }}" defer></script>
     <script type="text/javascript" src="{{ asset('shared_assets/JS/10_current_year.js') }}" defer></script>
+ --}}
+
+    @vite('resources/js/app.js')   <!-- For JS -->
+    @vite('resources/sass/app.scss') <!-- For SCSS -->
 
 </head>

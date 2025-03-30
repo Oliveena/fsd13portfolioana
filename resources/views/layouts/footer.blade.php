@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="{{ asset('css/style.css') }}">    
+    
     <footer>
         <div class="social-media">
             <a href="https://github.com/Oliveena" target="_blank"><img src="{{ asset('/images/github-mark.png') }}"

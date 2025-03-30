@@ -1,10 +1,4 @@
-<?php> 
-
-@include('layouts.header')
-
-<body id="gradient-background">
-
-    @include('layouts.navbar')
+@extends('layouts.app')
 
     <div id="content">
         <div id="contents">
@@ -99,4 +93,16 @@
         </div>
     </div>
 
-    @include('layouts.footer')
+    {{-- <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('js/dist/0_navbar_active_highlight.dev.js') }}"></script>
+    <script src="{{ asset('js/dist/1_fluid_transitions.dev.js') }}"></script>
+    <script src="{{ asset('js/dist/2_modal.dev.js') }}"></script>
+    <script src="{{ asset('js/dist/3_review_carousel.dev.js') }}"></script>
+    <script src="{{ asset('js/dist/4_walruses.dev.js') }}"></script>
+    <script src="{{ asset('js/dist/5_featured_projects_effects.dev.js') }}"></script>
+    <script src="{{ asset('js/dist/6_form_validation.dev.js') }}"></script>
+    <script src="{{ asset('js/dist/7_table.dev.js') }}"></script>
+    <script src="{{ asset('js/dist/8_google_api.dev.js') }}"></script>
+    <script src="{{ asset('js/dist/9_books_read.dev.js') }}"></script>
+    <script src="{{ asset('js/dist/10_current_year.dev.js') }}"></script>
+    <script src="{{ asset('js/dist/script.dev.js') }}"></script> --}}

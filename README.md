@@ -112,17 +112,95 @@ fsd13portfolioana
 ├─ phpunit.xml
 ├─ public
 │  ├─ .htaccess
+│  ├─ css
+│  │  ├─ style.css
+│  │  └─ style.css.map
 │  ├─ favicon.ico
+│  ├─ images
+│  │  ├─ applewalrus.jpg
+│  │  ├─ birthofwalrus.jpg
+│  │  ├─ css3-logo-png-transparent.png
+│  │  ├─ FCC.jpg
+│  │  ├─ figma.jpg
+│  │  ├─ fridawalrus.jpg
+│  │  ├─ github-mark.png
+│  │  ├─ html-logo.png
+│  │  ├─ icons8-home-64.png
+│  │  ├─ ig.png
+│  │  ├─ java-14-logo-png-transparent.png
+│  │  ├─ javascript-vector-logo-yellow-png-transparent-javascript-vector-12.png
+│  │  ├─ jpeg.webp
+│  │  ├─ linkedin-logo-linkedin-icon-transparent-free-png.webp
+│  │  ├─ Meta-Logo.png
+│  │  ├─ monawalrus.jpg
+│  │  ├─ napoleowalrus.jpg
+│  │  ├─ sql-database-icon-png-17.png
+│  │  ├─ thumbnail_20240601_143811.jpg
+│  │  ├─ valrustheimpalrus.jpg
+│  │  ├─ vector1.jpg
+│  │  ├─ w3schools-1536.png
+│  │  ├─ walruswiththepearlearring.jpg
+│  │  ├─ walrus_favicon_io
+│  │  │  ├─ android-chrome-192x192.png
+│  │  │  ├─ android-chrome-512x512.png
+│  │  │  ├─ apple-touch-icon.png
+│  │  │  ├─ favicon-16x16.png
+│  │  │  ├─ favicon-32x32.png
+│  │  │  ├─ favicon.ico
+│  │  │  └─ site.webmanifest
+│  │  ├─ walrus_favicon_io.zip
+│  │  ├─ walrus_progress
+│  │  │  ├─ 1.jpg
+│  │  │  ├─ 2.jpg
+│  │  │  ├─ 3.jpg
+│  │  │  ├─ 4.jpg
+│  │  │  ├─ 5.jpg
+│  │  │  ├─ 6.jpg
+│  │  │  └─ 7.jpg
+│  │  └─ youtube.png
 │  ├─ index.php
 │  └─ robots.txt
 ├─ README.md
 ├─ resources
 │  ├─ css
-│  │  ├─ style.css
-│  │  └─ style.css.map
 │  ├─ js
 │  │  ├─ app.js
-│  │  └─ bootstrap.js
+│  │  ├─ bootstrap.js
+│  │  └─ dist
+│  │     ├─ 0_navbar_active_highlight.dev.js
+│  │     ├─ 10_current_year.dev.js
+│  │     ├─ 1_fluid_transitions.dev.js
+│  │     ├─ 2_modal.dev.js
+│  │     ├─ 3_review_carousel.dev.js
+│  │     ├─ 4_walruses.dev.js
+│  │     ├─ 5_featured_projects_effects.dev.js
+│  │     ├─ 6_form_validation.dev.js
+│  │     ├─ 7_table.dev.js
+│  │     ├─ 8_google_api.dev.js
+│  │     ├─ 9_books_read.dev.js
+│  │     └─ script.dev.js
+│  ├─ scss
+│  │  ├─ main.scss
+│  │  ├─ styling
+│  │  │  ├─ _footer.scss
+│  │  │  ├─ _grid.scss
+│  │  │  ├─ _header.scss
+│  │  │  ├─ _navbar.scss
+│  │  │  ├─ _reset.scss
+│  │  │  └─ _review_caroussel.scss
+│  │  ├─ themes
+│  │  │  ├─ _bright.scss
+│  │  │  └─ _dark.scss
+│  │  ├─ webpages
+│  │  │  ├─ _contact.scss
+│  │  │  ├─ _featured_projects.scss
+│  │  │  ├─ _hobbies.scss
+│  │  │  ├─ _soft_skills.scss
+│  │  │  ├─ _tech_skills.scss
+│  │  │  └─ _welcome.scss
+│  │  ├─ _fonts.scss
+│  │  ├─ _mixins.scss
+│  │  └─ _variables.scss
 │  └─ views
 │     ├─ English
 │     │  ├─ contact.blade.php
@@ -134,7 +212,7 @@ fsd13portfolioana
 │     │  └─ index.blade.php
 │     ├─ home.blade.php
 │     ├─ layouts
-│     │  ├─ footer.php
+│     │  ├─ footer.blade.php
 │     │  ├─ header.blade.php
 │     │  └─ navbar.blade.php
 │     └─ Russian
@@ -152,34 +230,37 @@ fsd13portfolioana
 │  │  ├─ sessions
 │  │  ├─ testing
 │  │  └─ views
+│  │     ├─ 228b578189aa49ffd2f4ee3f86cc5e8f.php
 │  │     ├─ 232c063e9c876b9406a0d7b93e675bd9.php
-│  │     ├─ 31db02d6da8d04c8ab59a02d12a8b207.php
 │  │     ├─ 38401519e78f1b6e34ddaad932cca90a.php
 │  │     ├─ 43422d27c65099d1c2bed3a3d6f09737.php
-│  │     ├─ 4dbf48434b3fc901f14da58d5175dccb.php
+│  │     ├─ 548ce92440b3151c5e8b7ae5daec9ab6.php
 │  │     ├─ 662ea8e4bdc7f97f3b3e18a5b208da92.php
 │  │     ├─ 6765e099b3d0ff31483fb2f2a35f7d4b.php
 │  │     ├─ 6e1aefc5abf2e8f44da99163d1562873.php
 │  │     ├─ 7873bb208127276f2ec96f107868a381.php
 │  │     ├─ 7cfca5b3c0355add303054291e509980.php
+│  │     ├─ 806e17358f4fa9a6de842d791feadd70.php
+│  │     ├─ 8873b440805e1c5f01c9ef783eb33bce.php
 │  │     ├─ 8e49469b580f0cbf53925f70b0a33f59.php
+│  │     ├─ 993760810ce93c0a6a403101e35f86ec.php
 │  │     ├─ 9dd014bbadd1d497084c2293b7572414.php
 │  │     ├─ 9f3a20164d5553183dc52ed5e2f5250b.php
 │  │     ├─ a3841ab1fc13eeea6e8e040eb4ac9f64.php
 │  │     ├─ b5a0a55020adb5223d891067ab079fb3.php
 │  │     ├─ b5f01c24ddfa641c4f4bed7e9c3e54a6.php
+│  │     ├─ c0e4f194655c4eb04c4c5364460ef2b9.php
 │  │     ├─ d26976e4d919a4cb0e2f38a7ed405c95.php
 │  │     ├─ da391aca21bc0caffccaf54b9d5ff04e.php
-│  │     └─ f7fd64d14aebb13af542f622ba6e1277.php
+│  │     └─ e4ca4454e6b8a6d7b62eb1a538d4ae4e.php
 │  └─ logs
 │     └─ laravel.log
-├─ tests
-│  ├─ Feature
-│  │  └─ ExampleTest.php
-│  ├─ Pest.php
-│  ├─ TestCase.php
-│  └─ Unit
-│     └─ ExampleTest.php
-└─ vite.config.js
+└─ tests
+   ├─ Feature
+   │  └─ ExampleTest.php
+   ├─ Pest.php
+   ├─ TestCase.php
+   └─ Unit
+      └─ ExampleTest.php
 
 ```
