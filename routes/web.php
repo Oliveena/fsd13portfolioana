@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('English.index');
 });
-
+ 
 
 // English Routes
 Route::prefix('English')->name('English.')->group(function () {
