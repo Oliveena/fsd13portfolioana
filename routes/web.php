@@ -10,23 +10,23 @@ Route::get('/', function () {
 // English Routes
 Route::prefix('English')->name('English.')->group(function () {
     Route::get('index', function () {
-        return view('English.index'); // returns the English index view
+        return view('English.index'); 
     })->name('index');
 
     Route::get('skills', function () {
-        return view('English.skills'); // returns the English skills view
+        return view('English.skills'); 
     })->name('skills');
 
     Route::get('featuredprojects', function () {
-        return view('English.featuredprojects'); // returns the English featured projects view
+        return view('English.featuredprojects'); 
     })->name('featuredprojects');
 
     Route::get('hobbies', function () {
-        return view('English.hobbies'); // returns the English hobbies view
+        return view('English.hobbies'); 
     })->name('hobbies');
 
     Route::get('contact', function () {
-        return view('English.contact'); // returns the English contact view
+        return view('English.contact'); 
     })->name('contact');
 });
 

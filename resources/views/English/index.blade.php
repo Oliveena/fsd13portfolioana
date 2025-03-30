@@ -1,90 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php> 
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <meta name="description" content="A personal portfolio webpage for Anastassia Tarassova, junior developer.">
-    <meta name="author" content="Anastassia Tarassova">
-    <meta name="keywords" content="HTML, CSS, JS, Java, SQL, Personal, Portfolio, Web Dev, Women in STEM, Excellence">
-    <title>Anastassia's Web Dev Portfolio</title>
-
-    <!-- adding a favicon -->
-    <link rel="icon" type="image/x-image" href="{{ asset('shared_assets/images/walrus_favicon_io/favicon.ico') }}">
-
-    <!-- adding Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        crossorigin="anonymous">
-
-    <!-- adding custom CSS -->
-    <link rel="stylesheet" href="{{ asset('dist/css/main.css') }}">
-
-    <!-- adding JS scripts -->
-
-    <script type="text/javascript" src="{{ asset('shared_assets/JS/0_navbar_active_highlight.js') }}" defer></script>
-    <script type="text/javascript" src="{{ asset('shared_assets/JS/1_fluid_transitions.js') }}" defer></script>
-    <script type="text/javascript" src="{{ asset('shared_assets/JS/2_modal.js') }}" defer></script>
-    <script type="text/javascript" src="{{ asset('shared_assets/JS/3_review_carousel.js') }}" defer></script>
-    <script type="text/javascript" src="{{ asset('shared_assets/JS/4_walruses.js') }}" defer></script>
-    <script type="text/javascript" src="{{ asset('shared_assets/JS/5_featured_projects_effects.js') }}" defer></script>
-    <script type="text/javascript" src="{{ asset('shared_assets/JS/6_form_validation.js') }}" defer></script>
-    <script type="text/javascript" src="{{ asset('shared_assets/JS/7_table.js') }}" defer></script>
-    <script type="text/javascript" src="{{ asset('shared_assets/JS/8_google_api.js') }}" defer></script>
-    <script type="text/javascript" src="{{ asset('shared_assets/JS/9_books_read.js') }}" defer></script>
-    <script type="text/javascript" src="{{ asset('shared_assets/JS/10_current_year.js') }}" defer></script>
-
-</head>
+@include('layouts.header')
 
 <body id="gradient-background">
-    <!--========================================== NAVBAR SECTION ==========================================-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <!-- Toggle button for small screens -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="navbar-item">
-                        <a class="nav-link" href="{{ route('English.index') }}">Welcome</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a class="nav-link" href="{{ route('English.skills') }}">Skills</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a class="nav-link" href="{{ route('English.featuredprojects') }}">Featured Projects</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a class="nav-link" href="{{ route('English.hobbies') }}">Hobbies</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a class="nav-link" href="{{ route('English.contact') }}">Contact</a>
-                    </li>
-                    <!-- Languages Dropdown -->
-                    <li class="navbar-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Languages
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown"
-                            data-bs-popper="none">
-                            <li><a class="dropdown-item" href="{{ route('French.index') }}">Fran&ccedil;ais</a></li>
-                            <li><a class="dropdown-item" href="{{ route('French.index') }}">Русский</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    @include('layouts.navbar')
 
     <div id="content">
         <div id="contents">
             <!--========================================== HERO IMAGE SECTION ==========================================-->
             <header class="hero">
-                <img id="hero-img" src="{{ asset('shared_assets/images/vector1.jpg') }}" alt="full-page banner presenting the website">
-                <img id="face-img" src="{{ asset('shared_assets/images/thumbnail_20240601_143811.jpg') }}" alt="Ana's face"
+                <img id="hero-img" src="{{ asset('/images/vector1.jpg') }}" alt="full-page banner presenting the website">
+                <img id="face-img" src="{{ asset('/images/thumbnail_20240601_143811.jpg') }}" alt="Ana's face"
                     style="position: absolute; top: 15%; right: 50%; transform: translateX(150%); max-width: 25%; height: auto; z-index: 2; border-radius: 25%;"
                     loading="lazy">
                 <div class="hero-text" id="hero-text">
@@ -103,8 +30,9 @@
                         data-bs-target="#downloadModal" data-file="{{ asset('French/FR_assets/2024_Inf_Clin_CV_FR.pdf') }}">
                         PDF
                     </button>
+                    <!--TODO: add CV--> 
                     <button id="word-cv" class="btn btn-success btn-lg mx-2" data-bs-toggle="modal"
-                        data-bs-target="#downloadModal" data-file="{{ asset('French/FR_assets/2024_Inf_Clin_CV_FR.docx') }}">
+                    data-bs-target="#downloadModal" data-file="{{ asset('French/FR_assets/2024_Inf_Clin_CV_FR.docx') }}">
                         Word
                     </button>
                 </div>
@@ -171,34 +99,4 @@
         </div>
     </div>
 
-    <!--========================================== FOOTER SECTION ==========================================-->
-    <footer>
-        <div class="social-media">
-            <a href="https://github.com/Oliveena" target="_blank"><img src="{{ asset('shared_assets/images/github-mark.png') }}"
-                    alt="GitHub logo" width="50" height="50"></a>
-            <a href="https://ca.linkedin.com/" target="_blank"><img
-                    src="{{ asset('shared_assets/images/linkedin-logo-linkedin-icon-transparent-free-png.webp') }}"
-                    alt="LinkedIn logo" width="50" height="50"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img
-                    src="{{ asset('shared_assets/images/1725819461instagram-logo.png') }}" alt="IG logo" width="50" height="50"></a>
-            <a href="https://www.meta.com/ca/" target="_blank"><img src="{{ asset('shared_assets/images/Meta-Logo.png') }}"
-                    alt="META logo" width="50" height="50"></a>
-            <a href="https://www.youtube.com/" target="_blank"><img
-                    src="{{ asset('shared_assets/images/98ae159aa1bb8b4243fbe1f9e27d1b9f.png') }}" alt="YouTube logo" width="50"
-                    height="50"></a>
-        </div>
-        <p>&copy; <span id="our-year"></span> Anastassia Tarassova. All rights reserved.</p>
-    </footer>
-
-    <!-- Adding jQuery -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
-
-    <!-- Adding Bootstrap 5 JS and Popper.js -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" crossorigin="anonymous">
-    </script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" crossorigin="anonymous">
-    </script>
-</body>
-
-</html>
+    @include('layouts.footer')

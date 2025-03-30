@@ -1,0 +1,86 @@
+
+:root {
+  --eggshell: var(--#ddfff7);
+  --beige: var(--#d8c99b);
+  --yellow: var(--#f2c078);
+  --gold: var(--#d8973c);
+  --brown: var(--#bd632f);
+  --red: var(#a4243b) ;
+  --dark: var(--#273e47);
+  --lilac: var(--#7d83ff);
+  --light-blue: var(--#5688c7);
+  --navy-blue: var(--#150578);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "RF Dewi", "Raleway", Helvetica, serif, sans-serif;
+  font-size: 100%;
+  overflow-x: hidden;
+}
+
+.container {
+  background: linear-gradient(0deg, var(--beige) var(--grey) var(--dark-purple));
+  display: grid;
+  row-gap: 1vw;
+  justify-content: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 0 0 10px 0;
+  padding: 10px;
+  overflow: hidden;
+  background-color: var(--burgundy);
+  font-size: 2vw;
+  list-style-type: none;
+  position: fixed;
+  text-decoration: none;
+  z-index: 1;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  font-size: smaller;
+  padding: 0 10px;
+  color: var(--pale_lime);
+  text-decoration: none;
+}
+.navbar-nav ul a:link {
+  display: flex;
+  justify-content: center;
+  padding: 0 10px;
+  color: var(--neon_pink);
+  text-decoration: none;
+}
+.navbar-nav ul a:visited {
+  display: flex;
+  justify-content: center;
+  padding: 0 10px;
+  color: var(--pale_lime);
+  text-decoration: none;
+}
+.navbar-nav ul a:hover {
+  background-color: var(--yellow);
+  border-radius: 5px;
+  text-decoration: none;
+}
+.navbar-nav ul a:active {
+  font-size: larger;
+  border-radius: 5px;
+  text-decoration: none;
+  box-shadow: var(--neon_purple);
+}
+
+header {
+  padding-top: 7vw;
+  color: var(--grey);
+}
+
+h1 {
+  font-family: "Marion", "RF Dewi", "Raleway", Helvetica, serif, sans-serif;
+}
