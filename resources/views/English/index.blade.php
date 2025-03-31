@@ -79,30 +79,16 @@
         <!-- review form-->
         <div id="addReview" class="mt-5">
             <h3 class="text-center mb-3">Add Your Review</h3>
-            <form id="reviewForm" class="mx-auto" style="max-width: 500px;">
+            <form id="reviewForm" class="mx-auto" style="max-width: 800px;">
                 <div class="mb-3">
-                    <label for="reviewText" class="form-label">Your Review:</label>
+                    <label for="reviewText" class="form-label" style="color: black;">Your Review:</label>
                     <textarea id="reviewText" class="form-control" rows="4"></textarea>
                 </div>
                 <div class="mb-3">
-                    <label for="reviewName" class="form-label">Your Name:</label>
+                    <label for="reviewName" class="form-label" style="color: black;">Your Name:</label>
                     <input type="text" id="reviewName" class="form-control" />
                 </div>
                 <button type="submit" class="btn btn-primary w-100">Submit Review</button>
             </form>
         </div>
     </div>
-
-    {{-- <script src="{{ asset('js/app.js') }}"></script>
-    <script src="{{ asset('js/dist/0_navbar_active_highlight.dev.js') }}"></script>
-    <script src="{{ asset('js/dist/1_fluid_transitions.dev.js') }}"></script>
-    <script src="{{ asset('js/dist/2_modal.dev.js') }}"></script>
-    <script src="{{ asset('js/dist/3_review_carousel.dev.js') }}"></script>
-    <script src="{{ asset('js/dist/4_walruses.dev.js') }}"></script>
-    <script src="{{ asset('js/dist/5_featured_projects_effects.dev.js') }}"></script>
-    <script src="{{ asset('js/dist/6_form_validation.dev.js') }}"></script>
-    <script src="{{ asset('js/dist/7_table.dev.js') }}"></script>
-    <script src="{{ asset('js/dist/8_google_api.dev.js') }}"></script>
-    <script src="{{ asset('js/dist/9_books_read.dev.js') }}"></script>
-    <script src="{{ asset('js/dist/10_current_year.dev.js') }}"></script>
-    <script src="{{ asset('js/dist/script.dev.js') }}"></script> --}}

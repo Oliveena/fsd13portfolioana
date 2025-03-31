@@ -66,6 +66,7 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
 
+
 ```
 fsd13portfolioana
 ├─ .editorconfig
@@ -212,6 +213,7 @@ fsd13portfolioana
 │     │  └─ index.blade.php
 │     ├─ home.blade.php
 │     ├─ layouts
+│     │  ├─ app.blade.php
 │     │  ├─ footer.blade.php
 │     │  ├─ header.blade.php
 │     │  └─ navbar.blade.php
@@ -252,15 +254,18 @@ fsd13portfolioana
 │  │     ├─ c0e4f194655c4eb04c4c5364460ef2b9.php
 │  │     ├─ d26976e4d919a4cb0e2f38a7ed405c95.php
 │  │     ├─ da391aca21bc0caffccaf54b9d5ff04e.php
-│  │     └─ e4ca4454e6b8a6d7b62eb1a538d4ae4e.php
+│  │     ├─ e4ca4454e6b8a6d7b62eb1a538d4ae4e.php
+│  │     └─ eeb89201c6e0176b3a8538802b6f093a.php
 │  └─ logs
 │     └─ laravel.log
-└─ tests
-   ├─ Feature
-   │  └─ ExampleTest.php
-   ├─ Pest.php
-   ├─ TestCase.php
-   └─ Unit
-      └─ ExampleTest.php
+├─ tests
+│  ├─ Feature
+│  │  └─ ExampleTest.php
+│  ├─ Pest.php
+│  ├─ TestCase.php
+│  └─ Unit
+│     └─ ExampleTest.php
+├─ vite.config.js
+└─ webpack.mix.js
 
 ```
