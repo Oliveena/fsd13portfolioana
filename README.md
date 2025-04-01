@@ -116,6 +116,8 @@ fsd13portfolioana
 │  ├─ css
 │  │  ├─ style.css
 │  │  └─ style.css.map
+│  ├─ documents
+│  │  └─ 2024_Inf_Clin_CV_FR.pdf
 │  ├─ favicon.ico
 │  ├─ images
 │  │  ├─ applewalrus.jpg
@@ -167,6 +169,8 @@ fsd13portfolioana
 │  ├─ js
 │  │  ├─ app.js
 │  │  ├─ bootstrap.js
+│  │  ├─ components
+│  │  │  └─ App.vue
 │  │  └─ dist
 │  │     ├─ 0_navbar_active_highlight.dev.js
 │  │     ├─ 10_current_year.dev.js
@@ -210,15 +214,30 @@ fsd13portfolioana
 │     │  ├─ index.blade.php
 │     │  └─ skills.blade.php
 │     ├─ French
-│     │  └─ index.blade.php
+│     │  ├─ contact.blade.php
+│     │  ├─ featuredprojects.blade.php
+│     │  ├─ hobbies.blade.php
+│     │  ├─ index.blade.php
+│     │  └─ skills.blade.php
 │     ├─ home.blade.php
 │     ├─ layouts
 │     │  ├─ app.blade.php
+│     │  ├─ appfr.blade.php
+│     │  └─ appru.blade.php
+│     ├─ partials
 │     │  ├─ footer.blade.php
 │     │  ├─ header.blade.php
-│     │  └─ navbar.blade.php
+│     │  ├─ headerfr.blade.php
+│     │  ├─ headerru.blade.php
+│     │  ├─ navbar.blade.php
+│     │  ├─ navbarfr.blade.php
+│     │  └─ navbarru.blade.php
 │     └─ Russian
-│        └─ index.blade.php
+│        ├─ contact.blade.php
+│        ├─ featuredprojects.blade.php
+│        ├─ hobbies.blade.php
+│        ├─ index.blade.php
+│        └─ skills.blade.php
 ├─ routes
 │  ├─ console.php
 │  └─ web.php
@@ -232,28 +251,19 @@ fsd13portfolioana
 │  │  ├─ sessions
 │  │  ├─ testing
 │  │  └─ views
+│  │     ├─ 01a34765165a2f7aec5bff1f5fdfc655.php
+│  │     ├─ 0734e52275037d3e7be628546a1c8840.php
 │  │     ├─ 228b578189aa49ffd2f4ee3f86cc5e8f.php
-│  │     ├─ 232c063e9c876b9406a0d7b93e675bd9.php
-│  │     ├─ 38401519e78f1b6e34ddaad932cca90a.php
-│  │     ├─ 43422d27c65099d1c2bed3a3d6f09737.php
-│  │     ├─ 548ce92440b3151c5e8b7ae5daec9ab6.php
-│  │     ├─ 662ea8e4bdc7f97f3b3e18a5b208da92.php
-│  │     ├─ 6765e099b3d0ff31483fb2f2a35f7d4b.php
-│  │     ├─ 6e1aefc5abf2e8f44da99163d1562873.php
-│  │     ├─ 7873bb208127276f2ec96f107868a381.php
-│  │     ├─ 7cfca5b3c0355add303054291e509980.php
-│  │     ├─ 806e17358f4fa9a6de842d791feadd70.php
+│  │     ├─ 2c14c90df922264310bdade7bb2ada8b.php
+│  │     ├─ 34251826cae10a00b1befafc22a436d0.php
+│  │     ├─ 47e66ec08754715092fb43f1c472cbb2.php
 │  │     ├─ 8873b440805e1c5f01c9ef783eb33bce.php
-│  │     ├─ 8e49469b580f0cbf53925f70b0a33f59.php
-│  │     ├─ 993760810ce93c0a6a403101e35f86ec.php
-│  │     ├─ 9dd014bbadd1d497084c2293b7572414.php
-│  │     ├─ 9f3a20164d5553183dc52ed5e2f5250b.php
+│  │     ├─ 8e92db643611f1930a7555ecfa49891b.php
 │  │     ├─ a3841ab1fc13eeea6e8e040eb4ac9f64.php
-│  │     ├─ b5a0a55020adb5223d891067ab079fb3.php
-│  │     ├─ b5f01c24ddfa641c4f4bed7e9c3e54a6.php
 │  │     ├─ c0e4f194655c4eb04c4c5364460ef2b9.php
-│  │     ├─ d26976e4d919a4cb0e2f38a7ed405c95.php
-│  │     ├─ da391aca21bc0caffccaf54b9d5ff04e.php
+│  │     ├─ c135ac8c613d557107f7a57e617d4a0d.php
+│  │     ├─ c426f42cb6a7bbdd88b52321f62b7284.php
+│  │     ├─ d7af014e3f5c11ffe4c14fc786075323.php
 │  │     ├─ e4ca4454e6b8a6d7b62eb1a538d4ae4e.php
 │  │     └─ eeb89201c6e0176b3a8538802b6f093a.php
 │  └─ logs

@@ -1,0 +1,46 @@
+﻿@charset "utf-8";
+/* CSS Document */
+/*
+   Assignment 0
+   Developed By: Anastassia Tarassova
+   Developed Date:  28-01-2025
+   Filename: time-zones.css
+   This file contains styles used in the worldTime.html file.
+
+   Full Mock-Up on Figma: 
+   <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/design/zIAIUR9SBT8yFJ5rtwZcHm/World-Clock?node-id=8-65&embed-host=share" allowfullscreen></iframe> 
+*/
+
+.root {
+   --very-purple: #6501FD;
+   --lilac: #8969C4;
+   --light-puple: #F0E4FB;
+   --dark-blue: #33559F;
+   --sky-blue: #1E9BDD;
+   --green: #92FC91;
+   --background-green: #E4FEE5; 
+   --pale-mint: #F8FFF7;
+}
+
+#selected-body {
+   margin: 0;
+   padding: 0;
+   font: optional;
+   font-family: monospace, Arial, sans-serif; 
+   text-align: center;
+   background-color: var(--background-green);
+}
+
+#header.h1 {
+   background-color: var(--very-purple);
+   color: var(--pale-mint);
+   margin: 1vw;
+   padding: auto;
+}
+
+
+
+
+
+
+

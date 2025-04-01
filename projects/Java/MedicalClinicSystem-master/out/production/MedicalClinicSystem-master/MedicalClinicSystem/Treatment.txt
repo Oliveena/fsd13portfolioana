@@ -1,0 +1,7 @@
+Dr. Pearl - PrescriberID: 63321
+Dr. Tu - PrescriberID: 79552
+Dr. Yatsevska - PrescriberID: 19460
+Dr. Nguegno - PrescriberID: 10002
+Dr. Drapeau - PrescriberID: 02090
+Dr. Tremblay - PrescriberID: 96318
+Dr. Benoit - PrescriberID: 14318

@@ -1,66 +1,73 @@
 "use strict";
 
-/*========================================== adding a modal to download buttons (case 2)==========================================*/
-//adding a modal to download buttons (case 2)
+/*========================================== adding a modal to download buttons ==========================================*/
+// Adding a modal to download buttons
 $(document).ready(function () {
+
+  // Triggering file download after form submission
   $('#downloadForm').on('submit', function (e) {
-    e.preventDefault(); // making sure we get the form after its loaded
+    e.preventDefault(); // Prevent default form submission
 
-    document.getElementById('downloadForm').addEventListener('submit', function (e) {
-      e.preventDefault(); // getting the CV link from the data-file attribute
+    // Getting the selected file (PDF or Word) from the button's data-file attribute
+    var file = $('#download-btn').data('file');
+    if (!file) {
+      alert('No file selected for download');
+      return;
+    }
 
-      var file = $(this).data('file'); // storing the file path for after form submission
+    // Collecting the user input for name and email
+    var NAME = $('#userName').val().trim();
+    var EMAIL = $('#userEmail').val().trim();
 
-      $('#download-btn').data('file', file); // storing user entry
+    var valid = true;
+    var errorMessages = [];
 
-      var NAME = document.getElementById('userName').value.trim();
-      var EMAIL = document.getElementById('userEmail').value.trim(); //creating validation variables
+    // Email validation regex
+    var emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
 
-      var valid = true;
-      var errorMessages = []; // validating email with regex
+    // Validation checks for Name and Email
+    if (!NAME) {
+      valid = false;
+      errorMessages.push("Please provide your Name or Company Name.");
+    }
 
-      var emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/; // catching empty data entry
+    if (!EMAIL) {
+      valid = false;
+      errorMessages.push("Email cannot be empty.");
+    } else if (!emailRegex.test(EMAIL)) {
+      valid = false;
+      errorMessages.push("Please enter a valid email address.");
+    }
 
-      if (!NAME) {
-        valid = false;
-        errorMessages.push("Please provide your Name or Company Name.");
-      }
+    // Show error messages if any validation fails
+    if (!valid) {
+      alert(errorMessages.join("\n"));
+      return;
+    }
 
-      if (!EMAIL) {
-        valid = false;
-        errorMessages.push("Email cannot be empty.");
-      } else if (!emailRegex.test(EMAIL)) {
-        valid = false;
-        errorMessages.push("Please enter a valid email address.");
-      } // catching errors
+    // Store user details in localStorage
+    localStorage.setItem('userName', NAME);
+    localStorage.setItem('userEmail', EMAIL);
 
+    console.log("Stored Name or Company: " + localStorage.getItem('userName'));
+    console.log("Stored Email: " + localStorage.getItem('userEmail'));
 
-      if (!valid) {
-        alert(errorMessages.join("\n"));
-        return;
-      } // storing user entry in local storage
+    // Hide the modal after successful submission
+    var modal = bootstrap.Modal.getInstance(document.getElementById('downloadModal'));
+    modal.hide();
 
+    // Trigger the file download after the modal closes
+    setTimeout(function () {
+      window.location.href = file; // Initiates the file download
+    }, 500); // Adding a small delay to allow modal to close properly before triggering download
+  });
 
-      localStorage.setItem('userName', NAME);
-      localStorage.setItem('userEmail', EMAIL); // debug
+  // Handling the button click to set the file to be downloaded
+  $('#pdf-cv, #word-cv').on('click', function () {
+    var file = $(this).data('file');
+    $('#download-btn').data('file', file); // Store the selected file for later use
+  });
 
-      console.log("Stored Name or Company: " + localStorage.getItem('userName'));
-      console.log("Stored Email: " + localStorage.getItem('userEmail')); // hide modal
+  console.log("Adding a modal to download buttons");
 
-      var modal = bootstrap.Modal.getInstance(document.getElementById('downloadModal'));
-      modal.hide(); // triggering CV download after it closes
-
-      setTimeout(function () {
-        // getting the file path we stored at first
-        var file = $('#download-btn').data('file');
-
-        if (file) {
-          // downloading the file
-          window.location.href = file;
-        }
-      }, 500);
-    });
-  }); //testing
-
-  console.log("adding a modal to download buttons (case 2)");
 });

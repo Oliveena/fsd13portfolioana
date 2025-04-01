@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A webpage displaying various time zones and their clocks in real time.">
+    <meta name="author" content="Anastassia Tarassova">
+    <meta name="keywords"
+        content="Jackson Elecrtonics, JE, corporate, headquarters, world clock, time zones, travel, clock, time, watch, what time is it, world">
+    <link rel="icon" type="image/x-image" href="icons8-clock-cute-clipart/icons8-clock-128.png">
+    <title>Corporate Headquarters World Clock</title>
+    <!--Bootstrap before CSS-->
+    <link rel="stylesheet" href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css'>
+    <!--CSS link after Bootstrap-->
+    <link rel="stylesheet" href='styles/time-zones.css'>
+    <script type="text/JavaScript" src="scripts/time_zones.js" defer></script>
+</head>
+
+<body id="selected-body">
+    <div class="container-fluid">
+        <!--====================================HEADER (logo, slogan, title)====================================-->
+        <section class="header p-4">
+            <div class="row">
+                <div class="logo col-lg">
+                    <img src="images/je_logo.jpg" alt="Jackson Electronics logo with JE initials">
+                </div>
+                <h2 class="slogan font-weight-light col-lg fs-3">We are Jackson, we've got Electronics</h2>
+            </div>
+
+            <h1 class="title p-3">
+                Corporate Headquarters World Clock
+            </h1>
+        </section>
+        <!--====================================NAVLINKS without a navbar====================================-->
+        <section class="nav-links">
+            <div class="row ms-4 me-4">
+                <button class="btn btn-info btn-lg col-md m-2">JE Home</button>
+                <button class="btn btn-info btn-lg col-md m-2">Online Shopping</button>
+                <button class="btn btn-info btn-lg col-md m-2">Products</button>
+                <button class="btn btn-info btn-lg col-md m-2">Support</button>
+                <button class="btn btn-info btn-lg col-md m-2">Solutions</button>
+                <button class="btn btn-info btn-lg col-md m-2">Corporate</button>
+                <button class="btn btn-info btn-lg col-md m-2">Contact Us</button>
+                <button class="btn btn-info btn-lg col-md m-2">Help</button>
+            </div>
+        </section>
+        <section>
+            <h3 class="current-time p-4 m-4">Current time in</h3>
+            <!--OPTIONAL: add geolocation to the page: https://www.w3schools.com/html/html5_geolocation.asp -->
+            <form id="localForm" name="localForm" action="#">
+                <label for="local-time" class="display-6">Montreal, Canada</label>
+                <input type="text" id="local-time" name="local-time" class="display-6" readonly>
+            </form>
+
+        </section>
+
+        <!--====================================MAP====================================-->
+        <section class="map m-4">
+            <div class="map-container">
+                <img class="img-fluid" src="images/map.jpg" alt="world map in bright secondary colors">
+                <!-- I'll work with these once ICA-5 is given in 
+                 <div class="marker" id="marker-houston">Houston</div>
+                 <div class="marker" id="marker-houston">London</div>
+                 <div class="marker" id="marker-houston">New York</div>
+                 <div class="marker" id="marker-houston">Seattle</div>
+                 <div class="marker" id="marker-houston">Sydney</div>
+                 <div class="marker" id="marker-houston">Tokyo</div>
+                -->
+            </div>
+        </section>
+
+        <!--====================================OFFICES====================================-->
+        <!-- OPTIONAL: add flags to countries in the bottom rectangles  ////-->
+        <section>
+
+            <div class="row">
+                <!--HOUSTON-->
+                <div class="col-sm-4">
+                    <div class="card bg-info">
+                        <img src="images/usa.png" class="card-img-top" alt="Houston Image">
+                        <div class="card-body">
+                            <h5 class="card-title" id="time-houston-title">Houston, USA</h5>
+                            <p class="card-text" id="time-houston">Loading time...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--LONDON-->
+                <div class="col-sm-4">
+                    <div class="card bg-danger">
+                        <img src="images/uk.png" class="card-img-top" alt="London Image">
+                        <div class="card-body">
+                            <h5 class="card-title" id="time-london-title">London, UK</h5>
+                            <p class="card-text" id="time-london">Loading time...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--NEW YORK-->
+                <div class="col-sm-4">
+                    <div class="card bg-primary">
+                        <img src="images/usa.png" class="card-img-top" alt="New York Image">
+                        <div class="card-body">
+                            <h5 class="card-title" id="time-newYork-title">New York, USA</h5>
+                            <p class="card-text" id="time-newYork">Loading time...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <!--SEATTLE-->
+                <div class="col-sm-4">
+                    <div class="card bg-success">
+                        <img src="images/usa.png" class="card-img-top" alt="Seattle Image">
+                        <div class="card-body">
+                            <h5 class="card-title" id="time-seattle-title">Seattle, USA</h5>
+                            <p class="card-text" id="time-seattle">Loading time...</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--SYDNEY-->
+                <div class="col-sm-4">
+                    <div class="card bg-dark text-white">
+                        <img src="images/australia.png" class="card-img-top" alt="Sydney Image">
+                        <div class="card-body">
+                            <h5 class="card-title" id="time-sydney-title">Sydney, Australia</h5>
+                            <p class="card-text" id="time-sydney">Loading time...</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--TOKYO-->
+                <div class="col-sm-4">
+                    <div class="card bg-warning">
+                        <img src="images/japan.png" class="card-img-top" alt="Tokyo Image">
+                        <div class="card-body">
+                            <h5 class="card-title" id="time-tokyo-title">Tokyo, Japan</h5>
+                            <p class="card-text" id="time-tokyo">Loading time...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--OPTIONAL: could be cool for displaying an image onhover https://happysnailprogramming.com/2020/08/11/pop-up-images-how-to-make-an-image-appear-when-hovering-over-text-using-javascript-and-html/ -->
+        </section>
+
+
+        <!--====================================FOOTER====================================-->
+        <footer>
+            <p class="footer fs-6 m-4">© 2025 Jackson Elecrtonics. All rights reserved.</p>
+        </footer>
+
+
+        <!--====================================Bootstrap plugins================================-->
+        <script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'
+            integrity='sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo' crossorigin='anonymous'>
+        </script>
+
+        <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js'
+            integrity='sha384-pzjw8f+ua7Kw1TIq0D5Wi5ncmb3q2oh9r+fhpx1HiN3//xVZljZYQd8WzQZG6wIZ' crossorigin='anonymous'>
+        </script>
+    </div>
+</body>
+
+</html>

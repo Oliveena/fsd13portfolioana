@@ -20,13 +20,11 @@
                     <h3>Download my resume</h3>
                 </div>
                 <div class="cv_download mt-4">
-                    <button id="pdf-cv" class="btn btn-primary btn-lg mx-2" data-bs-toggle="modal"
-                        data-bs-target="#downloadModal" data-file="{{ asset('French/FR_assets/2024_Inf_Clin_CV_FR.pdf') }}">
+                    <button id="pdf-cv" class="btn btn-primary btn-lg mx-2" data-bs-toggle="modal" data-bs-target="#downloadModal" data-file="{{ asset('/documents/2024_Inf_Clin_CV_FR.pdf') }}">
                         PDF
                     </button>
-                    <!--TODO: add CV--> 
-                    <button id="word-cv" class="btn btn-success btn-lg mx-2" data-bs-toggle="modal"
-                    data-bs-target="#downloadModal" data-file="{{ asset('French/FR_assets/2024_Inf_Clin_CV_FR.docx') }}">
+                    
+                    <button id="word-cv" class="btn btn-success btn-lg mx-2" data-bs-toggle="modal" data-bs-target="#downloadModal" data-file="{{ asset('/documents/2024_Inf_Clin_CV_FR.docx') }}">
                         Word
                     </button>
                 </div>

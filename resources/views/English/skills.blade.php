@@ -19,11 +19,11 @@
                 <p> I began autonomously studying coding while simultaneously working as a nurse. <br>My approach is full of curiosity and diligence.</p>
 
                 <div class="container d-flex justify-content-center align-items-center flex-wrap">
-                    <a href="https://www.freecodecamp.org/learn">
+                    <a href="https://www.freecodecamp.org/oliveena">
                         <img class="portfolio" src="{{ asset('images/FCC.jpg') }}" alt="FreeCodeCamp Logo">
                     </a>
 
-                    <a href="https://pathfinder.w3schools.com/">
+                    <a href="https://www.w3profile.com/ana">
                         <img class="portfolio" src="{{ asset('images/w3schools-1536.png') }}" alt="W3Schools Logo">
                     </a>
                 </div>

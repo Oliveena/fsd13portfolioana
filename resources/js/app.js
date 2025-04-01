@@ -15,7 +15,6 @@ import './dist/script.dev.js';
 
 
 import { createApp } from 'vue';
-import App from './components/App.vue'; // Ensure you have a Vue component
 import '../scss/main.scss'; // Import SCSS
 
 createApp(App).mount('#app');  

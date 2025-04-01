@@ -1,0 +1,10 @@
+Johnathan Smith - Age: 42 - Medical History: Hypertension - PatientID: JS572438
+Emily Davis - Age: 29 - Medical History: Anxiety - PatientID: ED681225
+Michael Johnson - Age: 56 - Medical History: High Cholesterol - PatientID: MJ973462
+Olivia Brown - Age: 34 - Medical History: Migraines - PatientID: OB420358
+Samuel Garcia - Age: 61 - Medical History: Osteoarthritis - PatientID: SG812467
+Ava Wilson - Age: 25 - Medical History: Eczema - PatientID: AW739218
+James Martinez - Age: 47 - Medical History: Chronic Back Pain - PatientID: JM624981
+Sophia Anderson - Age: 62 - Medical History: Glaucoma - PatientID: SA551739
+David Taylor - Age: 53 - Medical History: Stroke - PatientID: DT486503
+Isabella. Thomas - Age: 39 - Medical History: Endometriosis - PatientID: IT902745
