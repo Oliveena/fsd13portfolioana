@@ -20,11 +20,12 @@
                     <h3>Download my resume</h3>
                 </div>
                 <div class="cv_download mt-4">
+                <!-- Buttons for PDF and Word -->
+                <div class="cv_download mt-4">
                     <button id="pdf-cv" class="btn btn-primary btn-lg mx-2" data-bs-toggle="modal" data-bs-target="#downloadModal" data-file="{{ asset('/documents/2024_Inf_Clin_CV_FR.pdf') }}">
                         PDF
                     </button>
-                    
-                    <button id="word-cv" class="btn btn-success btn-lg mx-2" data-bs-toggle="modal" data-bs-target="#downloadModal" data-file="{{ asset('/documents/2024_Inf_Clin_CV_FR.docx') }}">
+                    <button id="word-cv" class="btn btn-success btn-lg mx-2" data-bs-toggle="modal" data-bs-target="#downloadModal" data-file="{{ asset('/documents/2024_Inf_Clin_CV_FR.pdf') }}">
                         Word
                     </button>
                 </div>
@@ -41,21 +42,53 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form id="downloadForm">
+                        <form id="downloadForm" method="POST" action="{{ route('contact.store') }}">
+                            @csrf  
                             <div class="mb-3">
                                 <label for="userName" class="form-label">Name or Company Name</label>
-                                <input type="text" class="form-control" id="userName" required>
+                                <input type="text" class="form-control" id="userName" name="name" required>
                             </div>
                             <div class="mb-3">
-                                <label for="userEmail" class="form-label">Email Address</label>
-                                <input type="email" class="form-control" id="userEmail" required>
+                                <label for="userEmail" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="userEmail" name="email" required>
                             </div>
                             <button type="submit" class="btn btn-info">Submit</button>
-                        </form>
+                        </form>                        
                     </div>
                 </div>
             </div>
         </div>
+
+        @if(session('success'))
+    <div class="alert alert-success">
+        {{ session('success') }}
+    </div>
+    @endif
+
+    <script>
+        $(document).ready(function () {
+            // Check if there's a success message from the session
+            var successMessage = @json(session('success'));
+    
+            // If there is a success message, trigger the file download
+            if (successMessage) {
+                setTimeout(function () {
+                    // Ensure the file path is correctly passed in the button's data-file attribute
+                    var fileToDownload = '{{ asset("/documents/2024_Inf_Clin_CV_FR.pdf") }}'; // Make sure the file path is correct
+    
+                    // Check if the file URL exists and is valid
+                    if (fileToDownload) {
+                        window.location.href = fileToDownload;  // This should trigger the download
+                    } else {
+                        alert("File not found!");
+                    }
+                }, 500); // Delay to allow time for modal to close
+            }
+        });
+    </script>
+    
+
+
 
         <!--========================================== TESTIMONIALS SECTION ==========================================-->
         <h3 class="text-center mb-4">Testimonials</h3>

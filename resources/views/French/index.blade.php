@@ -5,10 +5,11 @@
     <div id="contents">
 <!--========================================== HERO IMAGE SECTION ==========================================-->
 <header class="hero">
-    <img id="hero-img" src="../shared_assets/images/vector1.jpg" alt="full-page banner presenting the website">
-    <img id="face-img" src="../shared_assets/images/thumbnail_20240601_143811.jpg" alt="Ana's face"
-        style="position: absolute; top: 15%; right: 50%; transform: translateX(150%); max-width: 25%; height: auto; z-index: 2; border-radius: 25%;"
-        loading="lazy">
+    <img id="hero-img" src="{{ asset('/images/vector1.jpg') }}" alt="full-page banner presenting the website">
+    <img id="face-img" src="{{ asset('/images/thumbnail_20240601_143811.jpg') }}" alt="Ana's face" 
+         style="position: absolute; top: 15%; right: 10%; transform: translateX(25%); max-width: 25%; height: auto; z-index: 2; border-radius: 25%;"
+         loading="lazy">
+    
     <!-- make it appear onscroll and on hover of hero-text -->
     <div class="hero-text" id="hero-text">
         <h1>Salut, c'est Ana</h1>

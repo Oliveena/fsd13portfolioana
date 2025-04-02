@@ -1,11 +1,11 @@
-@extends('layouts.app')
+@extends('layouts.appru')
 
 <div id="content">
     <div id="contents">
         <!--========================================== HERO IMAGE SECTION ==========================================-->
         <header class="hero">
-            <img id="hero-img" src="{{ asset('/images/vector1.jpg') }}" alt="баннер">
-            <img id="face-img" src="{{ asset('/images/thumbnail_20240601_143811.jpg') }}" alt="Лицо"
+            <img id="hero-img" src="{{ asset('/images/vector1.jpg') }}" alt="full-page banner presenting the website">
+                <img id="face-img" src="{{ asset('/images/thumbnail_20240601_143811.jpg') }}" alt="Ana's face"
                 style="position: absolute; top: 15%; right: 50%; transform: translateX(150%); max-width: 25%; height: auto; z-index: 2; border-radius: 25%;"
                 loading="lazy">
             <div class="hero-text" id="hero-text">

@@ -11,25 +11,25 @@
 
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-                <!-- Home (English) Link -->
-                <li class="navbar-item {{ request()->is('English*') ? 'active' : '' }}">
-                    <a class="nav-link" href="{{ route('English.index') }}">Добро пожаловать</a>
+                <!-- Home (Russian) Link -->
+                <li class="navbar-item {{ request()->is('Russian*') ? 'active' : '' }}">
+                    <a class="nav-link" href="{{ route('Russian.index') }}">Добро пожаловать</a>
                 </li>
                 <!-- Skills Link -->
-                <li class="navbar-item {{ request()->is('English/skills') ? 'active' : '' }}">
-                    <a class="nav-link" href="{{ route('English.skills') }}">Навыки</a>
+                <li class="navbar-item {{ request()->is('Russian/skills') ? 'active' : '' }}">
+                    <a class="nav-link" href="{{ route('Russian.skills') }}">Навыки</a>
                 </li>
                 <!-- Featured Projects Link -->
-                <li class="navbar-item {{ request()->is('English/featuredprojects') ? 'active' : '' }}">
-                    <a class="nav-link" href="{{ route('English.featuredprojects') }}">Избранные проекты</a>
+                <li class="navbar-item {{ request()->is('Russian/featuredprojects') ? 'active' : '' }}">
+                    <a class="nav-link" href="{{ route('Russian.featuredprojects') }}">Избранные проекты</a>
                 </li>
                 <!-- Hobbies Link -->
-                <li class="navbar-item {{ request()->is('English/hobbies') ? 'active' : '' }}">
-                    <a class="nav-link" href="{{ route('English.hobbies') }}">Хобби</a>
+                <li class="navbar-item {{ request()->is('Russian/hobbies') ? 'active' : '' }}">
+                    <a class="nav-link" href="{{ route('Russian.hobbies') }}">Хобби</a>
                 </li>
                 <!-- Contact Link -->
-                <li class="navbar-item {{ request()->is('English/contact') ? 'active' : '' }}">
-                    <a class="nav-link" href="{{ route('English.contact') }}">Контакты</a>
+                <li class="navbar-item {{ request()->is('Russian/contact') ? 'active' : '' }}">
+                    <a class="nav-link" href="{{ route('Russian.contact') }}">Контакты</a>
                 </li>
 
                 <!-- Language Dropdown -->
@@ -40,7 +40,7 @@
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="{{ route('French.index') }}">Français</a></li>
-                        <li><a class="dropdown-item" href="{{ route('Russian.index') }}">Русский</a></li>
+                        <li><a class="dropdown-item" href="{{ route('English.index') }}">English</a></li>
                     </ul>
                 </li>
             </ul>

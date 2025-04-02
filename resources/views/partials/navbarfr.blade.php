@@ -13,6 +13,7 @@
                     <!-- Home (French) Link -->
                     <li class="navbar-item {{ request()->is('French*') ? 'active' : '' }}">
                         <a class="nav-link" href="{{ route('French.index') }}">Bienvenue</a>
+
                     </li>
                     <!-- Skills Link -->
                     <li class="navbar-item {{ request()->is('French/skills') ? 'active' : '' }}">

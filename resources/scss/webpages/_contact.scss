@@ -4,33 +4,28 @@
 * Autoprefixer: v10.4.7
 * Browsers: last 4 version
 */
+/* Define the navy blue color */
+:root {
+    --navy-blue: #150578;
+}
 
-@import "../_mixins";
-@import "../variables";
-@import "../fonts";
+#contact {
+    margin-top: 20vw;
+}
 
-/*========================== CONTACT ==========================*/
+#contactForm {
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    background-color: var(--navy-blue); 
+    padding-top: 10vw;
 
-.contact {
-    @include basic-flexbox;
-    @include lateral-space;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    color: map-get($colors, lilac);
-    margin-top: $margin-top;
-    padding: 2%;
-    /*
-  border-radius: $border-radius-usual;
-  box-shadow: 1rem 1rem rgba(64, 61, 57, 0.3);
-  */
 
     fieldset {
         display: block;
         margin: 0;
         text-align: center;
-        padding: 1vw;
+        padding: 2vw;
 
         .form-group {
             display: -webkit-box;
@@ -43,18 +38,21 @@
             -webkit-box-align: center;
             -ms-flex-align: center;
             align-items: center;
-            margin: 2% 5%;
+            margin: 3% 5%;
+            padding: 10%;
 
             label {
                 display: block;
-                font-size: 1rem;
+                font-size: 1.1rem;
                 margin-bottom: 0.5rem;
+                color: white;
             }
 
             .empty {
                 width: 100%;
-                padding: 0.5rem;
+                padding: 0.8rem;
                 background-color: map-get($colors, beige);
+                border-radius: 5px;
 
                 &:active {
                     border: 2px solid map-get($colors, lilac);
@@ -74,21 +72,25 @@
     }
 
     .btn {
-        @include btn-styles(map-get($colors, brown), map-get($colors, lilac));
+        @include btn-styles(map-get($colors, lilac), map-get($colors, lilac));
+        border-radius: 5px;
+        padding: 1rem;
+        width: 30vw;
     }
+
+    h2.display-2 {
+        margin-bottom: 1.5rem;
+    }
+
 }
 
-h2.display-2 {
-    margin-bottom: 1.5rem;
-}
 
 /* ===================== MEDIA QUERIES ===================== */
-
 
 @media (min-width: 1024px) {
     .contact .container {
         padding: 5%;
-        max-width: 800px;
+        max-width: 900px; 
         margin: 5% auto;
     }
 

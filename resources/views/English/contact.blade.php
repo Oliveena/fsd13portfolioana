@@ -5,7 +5,6 @@
 
         <!--========================================== CONTACT FORM SECTION ==========================================-->
         <section class="contact my-5" id="contact">
-            <div class="container">
                 <form id="contactForm" class="shadow-lg p-4 rounded border border-light bg-dark">
                     <h3 class="text-center mb-4 text-white">Contact Me</h3>
 
@@ -31,7 +30,6 @@
 
                     <button type="submit" class="btn btn-primary w-100">Submit</button>
                 </form>
-            </div>
         </section>
     </div>
 
